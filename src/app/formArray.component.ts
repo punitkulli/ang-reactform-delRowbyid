@@ -48,7 +48,7 @@ addAddres(){
 
 
 deleteAddress(i){
-  (<FormArray>this.employeeForm.get('employeeDetails')).removeAt(i);
+  (<FormArray>this.employeeForm.controls.employeeDetails).removeAt(i);
 }
 
 }
