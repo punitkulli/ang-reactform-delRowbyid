@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup,FormArray } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormBuilder, FormGroup,FormArray } from '@angular/forms';
   templateUrl: 'formArray.component.html',
   styleUrls: ['formArray.component.css']
 })
-export class FormArrayComponent  {
+export class FormArrayComponent implements OnInit {
 
   states: Array<string> = ['KA', 'MH', 'KL', 'AP'];
   rto: Array<string> = ['KA-01', 'MH-49', 'KL-25', 'AP-28'];
